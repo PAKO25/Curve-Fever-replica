@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="main.js"></script>
+    <script src="players.js"></script>
+    <script src="setup.js"></script>
+    <script src="end.js"></script>
+    <script src="arcade.js"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body onload="setup()">
+    <div id="setup">
+        <div class="options">
+            <div class="optionoff" style="color:#FF0000" id="Fredo">
+                <spam class="colortext" id="Fred" onclick="reset(this.id)">Fred</span>
+                    <div class="inputdiv">
+                        <input type="text" class="input" id="Fred1" onfocus="focuson(this.id)" onblur="bluron(this.id)"
+                            onkeydown="keydown(event, this.id)">
+                        <input type="text" class="input" id="Fred2" onfocus="focuson(this.id)" onblur="bluron(this.id)"
+                            onkeydown="keydown(event, this.id)">
+                    </div>
+            </div>
+            <br>
+            <div class="optionoff" style="color:#04B404" id="Greenleeo">
+                <spam class="colortext" id="Greenlee" onclick="reset(this.id)">Greenlee</span>
+                    <div class="inputdiv">
+                        <input type="text" class="input" id="Greenlee1" onfocus="focuson(this.id)"
+                            onblur="bluron(this.id)" onkeydown="keydown(event, this.id)">
+                        <input type="text" class="input" id="Greenlee2" onfocus="focuson(this.id)"
+                            onblur="bluron(this.id)" onkeydown="keydown(event, this.id)">
+                    </div>
+            </div>
+            <br>
+            <div class="optionoff" style="color:#DF01D7" id="Pinkleyo">
+                <spam class="colortext" id="Pinkley" onclick="reset(this.id)">Pinkley</span>
+                    <div class="inputdiv">
+                        <input type="text" class="input" id="Pinkley1" onfocus="focuson(this.id)"
+                            onblur="bluron(this.id)" onkeydown="keydown(event, this.id)">
+                        <input type="text" class="input" id="Pinkley2" onfocus="focuson(this.id)"
+                            onblur="bluron(this.id)" onkeydown="keydown(event, this.id)">
+                    </div>
+            </div>
+            <br>
+            <div class="optionoff" style="color:#2ECCFA" id="Bluebello">
+                <spam class="colortext" id="Bluebell" onclick="reset(this.id)">Bluebell</span>
+                    <div class="inputdiv">
+                        <input type="text" class="input" id="Bluebell1" onfocus="focuson(this.id)"
+                            onblur="bluron(this.id)" onkeydown="keydown(event, this.id)">
+                        <input type="text" class="input" id="Bluebell2" onfocus="focuson(this.id)"
+                            onblur="bluron(this.id)" onkeydown="keydown(event, this.id)">
+                    </div>
+            </div>
+            <br>
+            <div class="optionoff" style="color:#FF8000" id="Willemo">
+                <spam class="colortext" id="Willem" onclick="reset(this.id)">Willem</span>
+                    <div class="inputdiv">
+                        <input type="text" class="input" id="Willem1" onfocus="focuson(this.id)"
+                            onblur="bluron(this.id)" onkeydown="keydown(event, this.id)">
+                        <input type="text" class="input" id="Willem2" onfocus="focuson(this.id)"
+                            onblur="bluron(this.id)" onkeydown="keydown(event, this.id)">
+                    </div>
+            </div>
+            <br>
+            <div class="optionoff" style="color:#848484" id="Greydono">
+                <spam class="colortext" id="Greydon" onclick="reset(this.id)">Greydon</span>
+                    <div class="inputdiv">
+                        <input type="text" class="input" id="Greydon1" onfocus="focuson(this.id)"
+                            onblur="bluron(this.id)" onkeydown="keydown(event, this.id)">
+                        <input type="text" class="input" id="Greydon2" onfocus="focuson(this.id)"
+                            onblur="bluron(this.id)" onkeydown="keydown(event, this.id)">
+                    </div>
+            </div>
+        </div>
+        <div class="options" style="display: inline;">
+            <p id="option1" class="optionon" onclick="changegm(this.id)">Normal</p><p id="option2" class="optionoff" onclick="changegm(this.id)">Arcade</p>
+        </div>
+        <br>
+
+        <p id="opozorilo" style="display: none;">Illegal player count!</p>
+        <div id="ok">
+            <button onclick="check()">PLAY!</button>
+        </div>
+
+    </div>
+
+
+    <div id="game" style="display: none;">
+        <div style="text-align: center;" class="canvasc">
+            <canvas id="canvas" onclick="togglepause()"></canvas>
+        </div>
+
+        <div class="scoreboard">
+            <h5 id="firstto" style="font-size: 30px;"></h5>
+            <div id="scoredisplay"></div>
+        </div>
+    </div>
+
+    <div id="end">
+        <h1 id="winnerdisplay"></h1>
+    </div>
+    <input type="text" id="takefocus">
+</body>
+
+</html>

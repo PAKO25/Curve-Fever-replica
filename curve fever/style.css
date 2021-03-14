@@ -1,0 +1,47 @@
+#canvas {
+    background-color: black;
+    border:2px solid #CBF748;
+}
+#end {
+    display: none;
+    text-align: center;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(75, 73, 73);
+}
+.input {
+    background-color: rgb(75, 73, 73);
+    border: 0px;
+}
+.input:focus{
+    background-color: gray;
+}
+.inputdiv {
+    display: inline;
+}
+#takefocus {
+    position: absolute;
+    opacity: 0;
+}
+.canvasc {
+    float: center;
+}
+.scoreboard {
+    float:right;
+}
+#game {
+    position: relative;
+}
+.optionoff {
+    opacity: 0.5;
+}
+.optionoff:hover {
+    opacity: 1;
+}
+.optionon {
+    opacity: 1;
+}
+.options {
+    font-size: 40px;
+}
